@@ -1,0 +1,97 @@
+.why-choose-section{
+    padding: 40px 0px;
+    width: 100%;
+    background-color: var(--primary-color);
+    
+}
+.why-choose-section{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+}
+.card-counter{
+    position: absolute;
+    right: 20px;
+    top: 10px;
+    font-family: 'Montserrat','Lato';
+    font-size: 3.5rem;
+    color: white;
+    font-weight: bolder;
+}
+.why-choose-us-card-container{
+    width: 85%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 20px;
+    margin-top: 40px;
+    flex-wrap: wrap;
+}
+.why-choose-us-card{
+    position: relative;
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-radius:5px;
+    border: 1px solid rgba(70, 123, 255, 0.696);
+    cursor: pointer;
+    padding: 30px 20px;
+    margin: 20px 0px;
+}
+
+.why-choose-us-card:hover span{
+    color: var(--secondary-color);
+    transition: all 0.2s ease-in-out;
+}
+
+.why-choose-us-card h2{
+    font-weight: 500;
+    align-self: flex-start;
+    color: white;
+    margin: 10px 0px 20px 0px;
+    font-size: 1rem;
+    text-transform: uppercase;
+}
+.why-choose-us-card p{
+    color: var(--mild-color);
+    text-align: left;
+    align-self: flex-start;
+}
+.why-choose-us-card svg{
+    align-self: flex-start;
+    font-size: 3.5rem;
+    margin-bottom: 10px;
+    color: var(--color-variant);
+}
+   @media (max-width: 990px) and (min-width: 768px){
+    .why-choose-us-text-container p{
+        width: 90%;
+    }
+    .why-choose-us-card-container{
+        flex-wrap: wrap;
+    }
+    .why-choose-us-card{
+        width: 45%;
+        margin-top: 20px;
+    }
+   }
+   @media screen and (max-width: 767px){
+    .why-choose-us-text-container p{
+        width: 100%;
+    }
+    .why-choose-us-card-container{
+        flex-direction: column;
+        width: 95%;
+    }
+    .why-choose-us-card {
+        width: 100%;
+        margin: 20px 0px;
+    }
+    .why-choose-us-text-container h1{
+        margin: 10px 0px;
+        width: 100%;
+    }
+   }

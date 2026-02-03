@@ -1,0 +1,310 @@
+header {
+    position: sticky;
+    top: 0px;
+    z-index: 4;
+    background-color: transparent;
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    align-self: flex-start;
+    transition: all .5s ease-in-out;
+    height: 60px;
+    overflow: hidden;
+}
+
+.scroll-color {
+    background-color: var(--secondary-mild);
+    position: fixed;
+    top: 0px;
+}
+
+nav {
+    width: 65%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+nav ul {
+    width: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+nav ul li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.line {
+    height: 1.5px;
+    width: 0px;
+    transition: all .3s ease;
+    background-color: var(--primary-color);
+}
+
+nav ul li:hover .line {
+    width: 100%;
+}
+
+nav ul li a {
+    color: white;
+    text-transform: capitalize;
+    font-size: .9rem;
+}
+
+.signup-btn {
+    padding: 10px 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--color-variant);
+    color: var(--primary-color);
+    text-transform: capitalize;
+    border-radius: 5rem;
+    font-family: poppins;
+    cursor: pointer;
+    transition: all .5s ease-in-out;
+    font-weight: 500;
+    margin-top: 0px;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30%;
+    overflow: hidden;
+    padding-top: 10px;
+}
+
+.logo {
+    object-fit: contain;
+    cursor: pointer;
+    width: 70%;
+    align-self: center;
+}
+
+.txtlogo {
+    height: 100px;
+    object-fit: contain;
+}
+
+.mobile-menu-container {
+    width: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 40px;
+    cursor: pointer;
+}
+
+.line1,
+.line2,
+.line3 {
+    width: 50%;
+    height: 2px;
+    background-color: rgb(175, 175, 175);
+    margin: 3px 0px;
+}
+
+.mobile-menu-container {
+    display: none;
+}
+
+.menu-card {
+    display: none;
+}
+
+.sign-up-btn-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.overlay {
+    display: none;
+}
+
+@media (max-width: 990px) and (min-width: 768px) {
+    .logo-container {
+        width: 30%;
+        padding-left: 40px;
+    }
+
+    .menu-container {
+        display: flex;
+    }
+
+    nav {
+        display: none;
+    }
+
+    .sign-up-btn-container {
+        display: none;
+
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .overlay {
+        display: block;
+        width: 0%;
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        transition: .2s all ease-in;
+        left: 0;
+        z-index: 10;
+    }
+
+    .menu-modal {
+        display: flex;
+        position: absolute;
+        width: 70%;
+        height: 100%;
+        overflow-x: hidden;
+        background-color: white;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        top: 0;
+        left: 0;
+    }
+
+    .showing-modal {
+        width: 100vw;
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-start;
+    }
+
+    .showing-modal ul li a {
+        font-family: poppins, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    .menu-modal ul {
+        width: 80%;
+        height: 55%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: flex-start;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        padding-top: 20px;
+    }
+
+    .menu-modal ul a {
+        font-size: 1rem;
+        color: #3e3e3e;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        text-transform: capitalize;
+        margin: 5px 0px;
+        padding: 10px;
+        width: 100%;
+        text-align: left;
+    }
+
+    .sign-up-btn-container {
+        display: none;
+    }
+
+    .mobile-menu-container {
+        display: flex;
+    }
+
+    nav {
+        display: none;
+    }
+
+    .logo-container {
+        width: 90%;
+        overflow: hidden;
+        margin-left: -80px;
+    }
+
+    .logo {
+        margin-top: 5px;
+        object-fit: contain;
+    }
+
+    header {
+        height: 70px;
+    }
+        .menu-card {
+            width: 80%;
+            padding: 50px 0px 0px 0px;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            height: 100vh;
+            background-color: white;
+            overflow: hidden;
+        }
+    
+        .menu-card .separator {
+            border-top: 1.5px solid #42434a;
+        }
+    
+        .menu-card .list {
+            list-style-type: none;
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+            padding: 0px 10px;
+        }
+    
+        .menu-card .list .element {
+            display: flex;
+            align-items: center;
+            color: #7e8590;
+            gap: 20px;
+            transition: all 0.3s ease-out;
+            padding: 4px 7px;
+            border-radius: 6px;
+            cursor: pointer;
+            width: 100%;
+        }
+    
+        .menu-card .list .element svg {
+            width: 19px;
+            height: 19px;
+            transition: all 0.3s ease-out;
+        }
+    
+        .menu-card .list .element .label {
+            font-weight: 500;
+            font-size: 1rem;
+        }
+    
+        .menu-card .list .element:hover {
+            background-color: var(--dark);
+            color: #ffffff;
+            transform: translate(1px, -1px);
+        }
+        .menu-card .list .element:hover a{
+            color: white;
+        }
+        .menu-card .list .delete:hover {
+            background-color: var(--dark);
+        }
+    
+        .menu-card .list .element:active {
+            transform: scale(0.99);
+        }
+    
+        .menu-card .list:not(:last-child) .element:hover svg {
+            stroke: #ffffff;
+        }
+    
+        .menu-card .list:last-child .element {
+            color: #7e8590;
+        }
+    
+}

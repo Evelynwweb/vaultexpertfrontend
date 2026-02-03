@@ -1,0 +1,239 @@
+.admin-dash{
+    min-height: 100vh;
+}
+.credit-form-container{
+    width: 85%;
+    padding: 20px 10px;
+    background-color: var(--primary-color);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 40px auto
+}
+.admin-page-header h3{
+    color: var(--mild-color);
+}
+.admin-page-header p{
+    color: whitesmoke;
+}
+.admin-page-header h2{
+    color: white;
+}
+.credit-form{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: auto;
+}
+.my-input{
+    height: 50px;
+    text-indent: 15px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    width: 40%;
+    outline: none;
+}
+.my-input:focus{
+    border:  2px solid rgb(157, 172, 255);
+}
+.my-input::placeholder{
+    text-transform: capitalize;
+    font-size: 1rem;
+}
+.credi-user{
+    padding: 15px 50px;
+    border-radius: 10px;
+    background-color:rgb(0, 63, 199);
+    color: white;
+    text-transform: capitalize;
+    cursor: pointer;
+    font-family: poppins;
+}
+.admin-user-display{
+    width: 95%;
+    background-color: white;
+    padding: 20px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+}
+.user-details-container{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 25px;
+}
+.user-email{
+    width: 40%;
+}
+.user-name{
+    width: 30%;
+}
+.user-password{
+    white-space: 20%;
+}
+.dashboard-wrapper{
+    flex-direction: column;
+}
+
+.promo-btn,.manual-btn, .active-promo-btn, .approve-btn,.mail-btn{
+    background-color: rgb(4, 178, 4);
+    color: white !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    cursor: pointer;
+    width: fit-content;
+    padding: 8px 12px;
+    min-width: 100px;
+    margin:  0px 4px;
+}
+.mail-btn{
+    background-color: rgb(181, 49, 242);
+}
+.approve-btn{
+    background-color: rgb(19, 195, 133);
+}
+.promo-btn:hover{
+    background-color: rgb(0, 138, 39);
+}
+.manual-btn{
+    background-color: rgb(4, 143, 178);
+}
+tbody{
+    overflow-x: scroll;
+}
+.active-promo-btn{
+    background-color: rgb(247, 45, 45);
+}
+.deactivate-card {
+    overflow: hidden;
+    position: relative;
+    background-color: #ffffff;
+    text-align: left;
+    border-radius: 0.5rem;
+    max-width: 290px;
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+}
+
+.deactivate-card .headers {
+    padding: 1.25rem 1rem 1rem 1rem;
+    background-color: #ffffff;
+}
+
+.deactivate-card .image {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #FEE2E2;
+    flex-shrink: 0;
+    justify-content: center;
+    align-items: center;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 9999px;
+}
+
+.deactivate-card .image svg {
+    color: #DC2626;
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+.deactivate-card .content {
+    margin-top: 0.75rem;
+    text-align: center;
+}
+
+.deactivate-card .title {
+    color: #111827;
+    font-size: 1rem;
+    font-weight: 600;
+    line-height: 1.5rem;
+}
+
+.deactivate-card .message {
+    margin-top: 0.5rem;
+    color: #6B7280;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+}
+
+.deactivate-card .actions {
+    margin: 0.75rem 1rem;
+    background-color: #F9FAFB;
+}
+
+.deactivate-card .desactivate {
+    display: inline-flex;
+    padding: 0.5rem 1rem;
+    background-color: #DC2626;
+    color: #ffffff;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    font-weight: 500;
+    justify-content: center;
+    width: 100%;
+    border-radius: 0.375rem;
+    border-width: 1px;
+    border-color: transparent;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+}
+
+.deactivate-card .cancel {
+    display: inline-flex;
+    margin-top: 0.75rem;
+    padding: 0.5rem 1rem;
+    background-color: #ffffff;
+    color: #374151;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    font-weight: 500;
+    justify-content: center;
+    width: 100%;
+    border-radius: 0.375rem;
+    border: 1px solid #D1D5DB;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+}
+.dash-b {
+    min-height: fit-content;
+    width: 90%;
+    margin: auto;
+    padding-bottom:40px ;
+}
+@media screen  and (max-width:740px){
+    .dash-b {
+            min-height: 80vh;
+            width: 90%;
+            margin: auto;
+        }
+    .credit-form{
+        flex-direction: column;
+    }
+    .my-input{
+        width: 100%;
+    }
+    .credi-user{
+        width: 100%;
+    }
+    .credit-form input{
+        margin-top: 30px;
+    }
+    .user-details-container{
+        flex-direction: column;
+    }
+    .user-email{
+        width: 100%;
+    }
+    .user-name{
+        width: 100%;
+    }
+    .user-password{
+        width: 100%;
+    }
+    
+}

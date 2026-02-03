@@ -1,0 +1,18 @@
+.mt5-trade-section{
+    padding: 40px 0px 60px 0px;
+}
+.mt5-img{
+    border-radius: 20px;
+}
+.mt5-img img{
+    border-radius: 20px;
+    border: 2px solid rgba(70, 123, 255, 0.491);
+}
+@media (max-width: 990px) {
+    .mt5-wrapper{
+        flex-direction: column-reverse;
+    }
+    .mt5-text{
+        margin-top: 40px;
+    }
+}

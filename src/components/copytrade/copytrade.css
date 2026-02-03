@@ -1,0 +1,24 @@
+.copytrade-header{
+    text-transform: uppercase;
+}
+.forex-img{
+    object-fit: contain;
+    height: auto;
+}
+.copy-trade-section{
+    padding: 0px !important;
+}
+.copy-trade-wrapper{
+    padding: 0px;
+}
+.copy-trade-text{
+    align-self: flex-start;
+}
+
+ @media screen and (max-width: 767px){
+    .about-copy-trade-section {
+        flex-direction: column-reverse;
+        width: 90%;
+    }
+    
+ }

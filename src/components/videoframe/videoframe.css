@@ -1,0 +1,60 @@
+.videoframe-section{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--primary-color);
+    
+}
+.video-wrapper{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    padding: 40px 0px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.dev/svgjs' width='1440' height='900' preserveAspectRatio='none' viewBox='0 0 1440 900'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1099%26quot%3b)' fill='none'%3e%3cpath d='M6 900L906 0L1512 0L612 900z' fill='url(%26quot%3b%23SvgjsLinearGradient1100%26quot%3b)'%3e%3c/path%3e%3cpath d='M523.2 900L1423.2 0L1640.7 0L740.7 900z' fill='url(%26quot%3b%23SvgjsLinearGradient1100%26quot%3b)'%3e%3c/path%3e%3cpath d='M1348 900L448 0L109 0L1009 900z' fill='url(%26quot%3b%23SvgjsLinearGradient1101%26quot%3b)'%3e%3c/path%3e%3cpath d='M898.8 900L-1.2000000000000455 0L-562.2 0L337.79999999999995 900z' fill='url(%26quot%3b%23SvgjsLinearGradient1101%26quot%3b)'%3e%3c/path%3e%3cpath d='M601.4022722725905 900L1440 61.402272272590494L1440 900z' fill='url(%26quot%3b%23SvgjsLinearGradient1100%26quot%3b)'%3e%3c/path%3e%3cpath d='M0 900L838.5977277274095 900L 0 61.402272272590494z' fill='url(%26quot%3b%23SvgjsLinearGradient1101%26quot%3b)'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1099'%3e%3crect width='1440' height='900' fill='white'%3e%3c/rect%3e%3c/mask%3e%3clinearGradient x1='0%25' y1='100%25' x2='100%25' y2='0%25' id='SvgjsLinearGradient1100'%3e%3cstop stop-color='rgba(15%2c 70%2c 185%2c 0.2)' offset='0'%3e%3c/stop%3e%3cstop stop-opacity='0' stop-color='rgba(15%2c 70%2c 185%2c 0.2)' offset='0.66'%3e%3c/stop%3e%3c/linearGradient%3e%3clinearGradient x1='100%25' y1='100%25' x2='0%25' y2='0%25' id='SvgjsLinearGradient1101'%3e%3cstop stop-color='rgba(15%2c 70%2c 185%2c 0.2)' offset='0'%3e%3c/stop%3e%3cstop stop-opacity='0' stop-color='rgba(15%2c 70%2c 185%2c 0.2)' offset='0.66'%3e%3c/stop%3e%3c/linearGradient%3e%3c/defs%3e%3c/svg%3e");
+    }
+.video-wrapper .video{
+    width: 90%;
+    object-fit: contain;
+    box-shadow: 0px 0px 5px var(--secondary-color);
+}
+.videoframe-text-container{
+    width: 80%;
+    padding: 0px 0px 50px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.videoframe-text-container h1{
+    font-size: 4rem;
+    color: white;
+    font-weight: 600;
+}
+.videoframe-text-container p{
+    width: 70%;
+    text-align: center;
+}
+ @media screen and (max-width: 767px) {
+    .video-wrapper .video{
+        object-fit: contain;
+    }
+    .videoframe-text-container h1{
+        font-size: 2.5rem;
+        font-weight: 500;
+    }
+    .videoframe-text-container{
+        width: 90%;
+    }
+    .video-wrapper{
+        padding: 10px 0px 20px 0px;
+    }
+    .videoframe-text-container p{
+        width: 100%;
+    }
+ }
