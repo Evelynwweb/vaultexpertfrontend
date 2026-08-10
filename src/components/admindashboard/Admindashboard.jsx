@@ -547,9 +547,15 @@ const Admindashboard = ({ route }) => {
 
   const deposits = useMemo(() => flattenLedger('deposit'), [flattenLedger])
   const withdrawals = useMemo(() => flattenLedger('withdraw'), [flattenLedger])
-  // The API returns the investments array as `invest`; the old code read
-  // `investment`, which is why the Trades view was permanently empty.
-  const trades = useMemo(() => flattenLedger('invest'), [flattenLedger])
+  // /api/getUsers returns raw user documents, where the array is `investment`.
+  // (Only the user-facing /api/getData renames it to `invest`, so don't be
+  // misled by the dashboard pages.) Accept either shape defensively.
+  const trades = useMemo(
+    () => (users.some((user) => Array.isArray(user?.investment))
+      ? flattenLedger('investment')
+      : flattenLedger('invest')),
+    [flattenLedger, users]
+  )
 
   const totals = useMemo(() => {
     const balance = users.reduce((sum, user) => sum + toNumber(user.funded), 0)
